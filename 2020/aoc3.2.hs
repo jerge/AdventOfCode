@@ -1,5 +1,3 @@
-import Data.List
-
 main = do 
   x <- readFile "./3"
   putStr$show$g$lines x
