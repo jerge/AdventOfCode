@@ -52,5 +52,6 @@ kx m ("ecl":ss) = case Data.Map.lookup (pack "ecl") m of
 kx m ("pid":ss) = case Data.Map.lookup (pack "pid") m of
     Just (x:xs) -> Data.Text.filter isDigit x == x && Data.Text.length x == 9 && kx m ss
     _ -> False
+kx _ _ = error "invalid key"
 
 rr t = read (unpack t) :: Integer
