@@ -1,13 +1,14 @@
 # AdventOfCode
 
 ## 2020
-Theme: Minimalistic. Atleast until I get tired of it
-
 Language: Haskell
 
+Bonus Theme: Minimalistic. Atleast until I get tired of it
+
+
 ## 2021
-Theme: None?
-
-Language Python
+Language: Python
 
 
+## 2022
+Language: Python
