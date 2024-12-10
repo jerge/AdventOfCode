@@ -1,5 +1,5 @@
-inp = '12345'
-inp = open("9.txt", 'r').read()
+inp = '123456789123456789123456789'
+# inp = open("9.txt", 'r').read()
 
 def find_sub_list(sl,l):
     sll=len(sl)
@@ -39,7 +39,7 @@ for i in range(id,0,-1):
     size = len(str(i))
 
     #Kill me now, size was not needed :))))))))))))))))))))
-    #start_dot, end_dot = find_sub_list(['.'] * (amount*size), disk)
+    # start_dot, end_dot = find_sub_list(['.'] * (amount*size), disk)
     start_dot, end_dot = find_sub_list(['.'] * (amount), disk)
     # print(start_dot, end_dot)
     if start_dot == None:
@@ -52,7 +52,7 @@ for i in range(id,0,-1):
     if (start_num == None):
         raise ValueError(i)
     disk = disk[:start_dot] + disk[start_num:end_num] + disk[end_dot:start_num] + disk[start_dot:end_dot] + disk[end_num:]
-
+print(''.join(disk))
 csum = 0
 for i in range(0,len(disk)):
     if disk[i] == '.':
